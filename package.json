@@ -1,0 +1,82 @@
+{
+  "config": {
+    "console_app_name": "hash"
+  },
+  "dependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "angular": "^1.6.2",
+    "angular-ui-router": "^1.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-standard": "^0.2.0",
+    "bootstrap": "^3.3.7",
+    "eslint-config-angular": "^0.5.0",
+    "eslint-config-xo-space": "^0.21.0",
+    "eslint-plugin-angular": "^4.0.0",
+    "file-loader": "^3.0.1",
+    "jquery": "^2.2.4",
+    "jquery-ui": "^1.12.1",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@types/angular": "^1.6.6",
+    "@types/angular-mocks": "^1.5.9",
+    "@types/angular-ui-router": "^1.1.36",
+    "@types/jquery": "^2.0.40",
+    "angular-mocks": "^1.6.2",
+    "autoprefixer": "^6.7.3",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.18.8",
+    "browser-sync-spa": "^1.0.3",
+    "clean-webpack-plugin": "^1.0.1",
+    "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^0.26.1",
+    "del": "^2.2.2",
+    "es6-shim": "^0.35.3",
+    "eslint": "^5.7.0",
+    "eslint-config-prettier": "^3.1.0",
+    "eslint-loader": "^2.1.1",
+    "exports-loader": "^0.7.0",
+    "expose-loader": "^0.7.5",
+    "express": "^4.16.4",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "html-loader": "^0.4.4",
+    "html-webpack-inline-source-plugin": "0.0.10",
+    "html-webpack-plugin": "^3.2.0",
+    "inline-manifest-webpack-plugin": "^4.0.2",
+    "jasmine": "^2.5.3",
+    "mini-css-extract-plugin": "^0.5.0",
+    "ng-annotate-loader": "^0.2.0",
+    "oclazyload": "^1.1.0",
+    "open": "0.0.5",
+    "postcss-loader": "^1.3.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.17.1",
+    "webpack-bundle-analyzer": "^3.0.4",
+    "webpack-dev-middleware": "^3.1.6",
+    "webpack-hot-middleware": "^2.24.3",
+    "webpack-merge": "^4.2.1"
+  },
+  "scripts": {
+    "build": "set NODE_ENV=production&& node webpack_config/scripts/build.js"
+  },
+  "eslintConfig": {
+    "globals": {
+      "expect": true
+    },
+    "root": true,
+    "env": {
+      "browser": true,
+      "jasmine": true
+    },
+    "parser": "babel-eslint",
+    "extends": [
+      "xo-space/esnext"
+    ]
+  }
+}
