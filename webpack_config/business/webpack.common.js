@@ -72,7 +72,6 @@ module.exports = function (options) {
             }),
             new webpack.optimize.OccurrenceOrderPlugin(),
             new webpack.NoEmitOnErrorsPlugin(),
-            new webpack.HotModuleReplacementPlugin(),
             new HtmlWebpackPlugin({
                 template: './src/index.html',
                 filename: 'index.html',
